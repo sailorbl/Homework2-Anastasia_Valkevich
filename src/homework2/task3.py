@@ -2,5 +2,10 @@
    Например, если было введено "abc cde def", то должно быть выведено "abcdef".
 """
 
+
 str_ = "abc cde def"
-print(str_.replace(" "))
+newSTR = ''
+for symbol in str_:
+    if symbol not in newSTR and symbol != ' ':
+        newSTR += symbol
+print(newSTR)
